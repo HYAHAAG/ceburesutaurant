@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* ヘッダー関係 */
+header{
+    display: flex;
+    /* flex-direction:row ; */
+    /* justify-content: space-between; */
+    /* text-align:center; */
+    justify-content: space-between;
+    font-size:100px;
+    background-color: #3da1ff;
+    color: white;
+    /* z-index: 1; */
+    /* z-indexプロパティでは、値を整数で入力し、大きい数値のものほど手前に表示されます */
+}
+
+
+
+.site_name{
+    display: flex;
+    flex-direction:row ;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 0 0 auto;
+}
+
+
+.header_list{
+    /* display: flex; */
+    /* flex-direction:row ;
+    justify-content:flex-end;
+    align-items: center; */
+    margin: auto 0 auto auto;
+    text-align: center;
+
+}
+
+.header_list_ul{
+    display: flex;
+    flex-direction:row ;
+}
+
+.header_list_list{
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+/* ヘッダー消えるアニメーション */
+#header{
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 100%;
+	height: 300px;
+	background-color: #aaa;
+	transition: all 0.3s ease-out;
+}
+#header.fixed-hide{
+	top: -300px;
+}
+
+/* スライドショー */
+
+/* #slideshow {
+    position: relative;
+   width:  100vw; /* 画像の横幅に合わせて記述 */
+   /* height: 270px; /* 画像の高さに合わせて記述 */
+/* }
+#slideshow img {
+    position: absolute;
+    top: 300px;
+    left:0;
+    z-index: 8;
+    opacity: 0.0;
+}
+#slideshow img.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+#slideshow img.last-active {
+    z-index: 9;
+} */ 
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+    margin:0 auto;
+    top:300px;
+}
+
+.slider img {
+    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height:auto;
+}
+
+.slider .slick-slide {
+	transform: scale(0.8);/*左右の画像のサイズを80%に*/
+	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+	opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+	opacity: 1;/*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next{
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
