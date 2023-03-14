@@ -97,7 +97,10 @@ header{
     z-index: 9;
 } */ 
 
-
+.riko_photo{
+    width:100vw;
+    height: 20px;
+}
 /*==================================================
 スライダーのためのcss
 ===================================*/
@@ -110,6 +113,7 @@ header{
 .slider img {
     width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
     height:auto;
+    /* object-fit: cover; */
 }
 
 .slider .slick-slide {
@@ -129,9 +133,9 @@ header{
 /*戻る、次へ矢印の位置*/
 .slick-prev,
 .slick-next{
-    position: absolute;/*絶対配置にする*/
-    top: 42%;
-    cursor: pointer;/*マウスカーソルを指マークに*/
+    position:absolute;/*絶対配置にする*/
+    top: 40%;
+    cursor: pointer;       /*マウスカーソルを指マークに*/
     outline: none;/*クリックをしたら出てくる枠線を消す*/
     border-top: 2px solid #666;/*矢印の色*/
     border-right: 2px solid #666;/*矢印の色*/
@@ -153,19 +157,19 @@ header{
 
 .slick-dots {
     text-align:center;
-	margin:20px 0 0 0;
+	margin:70px 0 0 0;
 }
 
 .slick-dots li {
     display:inline-block;
-	margin:0 5px;
+	margin:0 10px;
 }
 
 .slick-dots button {
     color: transparent;
     outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
+    width:20px;/*ドットボタンのサイズ*/
+    height:20px;/*ドットボタンのサイズ*/
     display:block;
     border-radius:50%;
     background:#ccc;/*ドットボタンの色*/
