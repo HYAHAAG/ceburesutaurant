@@ -1,0 +1,201 @@
+/* ページ全体のスタイル
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #F2F2F2;
+	color: #333;
+}
+ヘッダーのスタイル */
+/* header {
+	background-color: #4285F4;
+	padding: 20px;
+	color: #FFF;
+	text-align: center;
+}
+/* メインのスタイル */
+/* main {
+	max-width: 800
+} */ 
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* ヘッダー関係 */
+header{
+    display: flex;
+    /* flex-direction:row ; */
+    /* justify-content: space-between; */
+    /* text-align:center; */
+    justify-content: space-between;
+    font-size:20px;
+    background-color: #3da1ff;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    z-index:10;
+    /* z-indexプロパティでは、値を整数で入力し、大きい数値のものほど手前に表示されます */
+}
+
+
+
+.site_name{
+    display: flex;
+    flex-direction:row ;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 0 ;
+}
+
+
+.header_list{
+    /* display: flex; */
+    /* flex-direction:row ;
+    justify-content:flex-end;
+    align-items: center; */
+    margin: auto 0 auto auto;
+    text-align: center;
+
+}
+
+.header_list_ul{
+    display: flex;
+    flex-direction:row ;
+    margin: 0;
+}
+
+.header_list_list{
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+
+/* ヘッダー消えるアニメーション */
+#header{
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 100%;
+	height: 25px;
+	background-color: #aaa;
+	transition: all 0.3s ease-out;
+}
+#header.fixed-hide{
+	top: -50px;
+}
+
+/* ページ全体のスタイル */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #F2F2F2;
+	color: #333;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+/* 背景画像のスタイル */
+.bg-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('background.jpg');
+	filter: brightness(0.7);
+}
+
+/* プロフィール写真のスタイル */
+
+.profile-img-wrapper {
+    position: relative;
+    margin: 50px auto 20px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .profile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+    
+    .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    }
+    
+    .profile-img-wrapper:hover .img-overlay {
+    opacity: 1;
+    }
+    
+    /* ヘッダーのスタイル */
+    header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    header h1 {
+    margin: 0;
+    font-size: 36px;
+    }
+    
+    /* メインコンテンツのスタイル */
+    main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    section {
+    margin-bottom: 50px;
+    }
+    
+    h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+    
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    
+    li {
+    margin-bottom: 10px;
+    }
+    
+    a {
+    color: #333;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
+
+

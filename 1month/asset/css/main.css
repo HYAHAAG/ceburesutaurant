@@ -3,6 +3,35 @@
     margin: 0;
 }
 
+
+
+/* 最初のアニメーション */
+.before_top {
+    background-color: rgb(255, 255, 255);
+    color: rgb(93, 208, 226);
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0px;
+    /* position: fixed; 要素を固定位置に配置する */
+    top: 50px; /* 上端に対しての位置 */
+    left: 0; /* 左端に対しての位置 */
+    width: 100%; /* 要素の横幅を100%に設定する */
+    height: 100vw; /*要素の高さを100%に設定する */
+    
+    /* z-index: -1;  */
+    /* 要素を最前面に配置する */
+    /* background-color: rgba(0, 0, 0, 0.5); 背景色を半透明に設定する */
+
+}
+/* 背景 */
+/* body {
+    background-image: url("/asset/img/Whale-Shark-Oslob-Cebu-Philippines-Aerial-View-Project-LUPAD.webp");
+    background-size: cover; /* 画面いっぱいに広げる */
+    /* opacity: 1; /* 透過率を指定 */
+    /* z-index:-10;
+} * */
+
+
 /* 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
@@ -19,10 +48,11 @@ header{
     /* justify-content: space-between; */
     /* text-align:center; */
     justify-content: space-between;
-    font-size:100px;
+    font-size:20px;
     background-color: #3da1ff;
     color: white;
-    /* z-index: 1; */
+    font-family: 'Roboto', sans-serif;
+    z-index:10;
     /* z-indexプロパティでは、値を整数で入力し、大きい数値のものほど手前に表示されます */
 }
 
@@ -72,12 +102,12 @@ header{
 	align-items: center;
 	
 	width: 100%;
-	height: 300px;
+	height: 50px;
 	background-color: #aaa;
 	transition: all 0.3s ease-out;
 }
 #header.fixed-hide{
-	top: -300px;
+	top: -50px;
 }
 
 /*==================================================
@@ -115,13 +145,13 @@ to {
 
 .topmessage{
     position: absolute;
-    top: 700px;
-    left: 100px;
+    top: 175px;
+    left: 25px;
 
 }
 
 .topmessage_h1{
-    font-size: 300px;
+    font-size: 75px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     writing-mode: vertical-lr;
     text-orientation:upright;
@@ -131,12 +161,12 @@ to {
 
 .top_p{
     position: absolute;
-    top: 1300px;
-    left: 3900px;
+    top: 325px;
+    left: 975px;
 }
 
 .top_p_p{
-    font-size: 150px;
+    font-size: 37.5px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     writing-mode: vertical-lr;
     text-orientation:upright;
@@ -155,19 +185,53 @@ to {
         
     } */
 
+    /* マンゴーとジンベエザメ */
+/* .container_special {
+    position: relative;
+    height: 400px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.bouncing-image {
+    position: absolute;
+    width: 15px;
+    height: 150px;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+    transform: translateX(0) translateY(0);
+    }
+    25% {
+    transform: translateX(300px) translateY(0);
+    }
+    50% {
+    transform: translateX(300px) translateY(200px);
+    }
+    75% {
+    transform: translateX(0) translateY(200px);
+    }
+    100% {
+    transform: translateX(0) translateY(0);
+    }
+} */
+
 
 /* ラーメンとナイト肉位置指定 */
 .top_img_1 {
 /* 親要素から指定 */
 position: absolute;
-top: 900px;
-left: 1800px;
+top: 225px;
+left: 450px;
 z-index: 10;
 
 }
 
 .top_img_only_1{
-width: 1300px;
+width: 325px;
 /* height: 1479px;
 object-fit: cover; この一行を追加するだけ！ */
 }
@@ -175,72 +239,72 @@ object-fit: cover; この一行を追加するだけ！ */
 
 .top_img_2{
 position: absolute;
-top: 300px;
-left: 2800px;
+top: 75px;
+left: 700px;
 }
 
 .top_img_only_2{
-width: 800px;
+width: 200px;
 }
 
 
 /* リチョンとナイト飲み物を位置してい */
 .top_img_3{
 position: absolute;
-top: 2700px;
-left: 100px;
+top: 675px;
+left: 25px;
 z-index: 10;
 }
 
 .top_img_only_3{
-width: 800px;
+width: 200px;
 }
 
 
 .top_img_4{
 position: absolute;
-top: 3000px;
-left: 800px;
+top: 750px;
+left: 200px;
 }
 
 .top_img_only_4{
-width: 700px;
+width: 175px;
 }
     
 
 /* 韓国とジョリビーを位置指定 */
 .top_img_5{
 position: absolute;
-top: 3600px;
-left: 2800px;
+top: 900px;
+left: 700px;
 z-index: 10;
 }
 
 .top_img_only_5{
-width: 1500px;
+width: 375px;
 }
 
 
 .top_img_6{
 position: absolute;
-top: 3300px;
-left: 4000px;
+top: 825px;
+left: 1000px;
 }
 
 .top_img_only_6{
-width: 1100px;
+width: 275px;
 }
 
 /* 謎にきれーなジョリビー位置指定 */
 .top_img_7{
     position: absolute;
-    top: 1300px;
-    left: 4700px;
+    top: 325px;
+    left: 1175px;
 }
 
     
 .top_img_only_7{
-width: 800px;
+width: 200px;
 }
 
     

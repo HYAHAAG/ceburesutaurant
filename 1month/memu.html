@@ -7,73 +7,465 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./asset/css/menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Meiryo" rel="stylesheet"> -->
+
 
 </head>
 <body>
-    <header id="header" >
-        <div class="site_name">
-            <h1>Ryosuke Site</h1>
-        </div>
-        <div class="header_list" >
-            <ul class="header_list_ul">
-                <li class="header_list_list"><a href="#">Top</a></li>
-                <li class="header_list_list"><a href="#">お店一覧</a></li>
-                <li class="header_list_list"><a href="#">筆者情報</a></li>
-                <li class="header_list_list"><a href="#">お問い合わせ</a></li>
-            </ul>
-        </div>
-    </header>
+        <header id="header" >
+            <div class="site_name">
+                <h1>Ryosuke Site</h1>
+            </div>
+            <div class="header_list" >
+                <ul class="header_list_ul">
+                    <li class="header_list_list"><a href="/index.html">Top</a></li>
+                    <li class="header_list_list"><a href="/memu.html">お店一覧</a></li>
+                    <li class="header_list_list"><a href="/selfintro.html">筆者情報</a></li>
+                    <li class="header_list_list"><a href="/toiawase.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </header>
+    <div class="background">
+        <main>
+            <div class="store">
 
-    <main>
-        <div class="store">
-            <div class="riko">
-                <div class="riko_photo">
-                    <ul class="slider">
-                        <li><img src="./asset/img/rico-buta.jpg" alt="リコ豚" ></li> 
-                        <li><img src="./asset/img/ricos slices lechon.jpg" alt="リコスライス"></li>
-                        <li><img src="./asset/img/ricos-lechon-062518.jpg" alt="リコリチョン"></li>
-                    </ul>
+                
+
+
+                <div class="riko">
+
+                    <div class="title_riko">
+                        <h1 class="title_riko_h1">Rico's Lechon</h1>
+                    </div>
+
+                    <div class="riko_photo">
+                        <ul class="slider">
+                            <li><img src="./asset/img/rico-buta.jpg" alt="リコ豚" ></li> 
+                            <li><img src="./asset/img/ricos slices lechon.jpg" alt="リコスライス"></li>
+                            <li><img src="./asset/img/ricos-lechon-062518.jpg" alt="リコリチョン"></li>
+                        </ul>
+                    </div>
+
+                    <!-- リコ　レーティング -->
+                    <div class="ratings-container">
+                        <div class="ratings-labels">
+                            <div class="rating-label">美味しさ</div>
+                            <div class="rating-label">安さ</div>
+                            <div class="rating-label">安全性</div>
+                        </div>
+                        <div class="ratings">
+                            <div class="rating star-rating">
+                                <div class="stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                </div>
+                                <div class="rating-value">4.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">3.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">2.5</div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!-- 店説明 -->
+                    <div class="riko_descri">
+                        <div class="riko_descri_container">
+                            <div class="riko_descri_left">
+                                <h1 class="riko_descri_h1">旨みが凄い</h1>
+                                <p class="riko_descri_p">しかし,Rico's Lechonは違う。<br>日本でも店を作ってほしいほど</p>
+                            </div>
+                            <div class="riko_descri_right">
+                                <img class="riko_descri_img" src="/asset/img/rico-cebu-newmenu2.jpg" alt="リコメニュー">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- リコ　地図 -->
+                    <div class="riko_map">
+                        <h1>Rico's Lechon - AyalaMalls Central Bloc</h1>
+                        <!-- 地図を表示するためのdiv要素 -->
+                        <div id="map"></div>
+                    </div>
                 </div>
                 
-                <div>
-                    <h1>Rico's Lechon</h1>
+
+
+
+
+<!-- 韓国編 -->
+                <div class="riko">
+
+                    <div class="title_riko">
+                        <h1 class="title_riko_h1">Barangay Seoul Express</h1>
+                    </div>
+
+                    <div class="riko_photo">
+                        <ul class="slider">
+                            <li><img src="./asset/img/slide_kankoku1.webp" alt="リコ豚" ></li> 
+                            <li><img src="./asset/img/slide_kankoku2.jpg" alt="リコスライス"></li>
+                            <li><img src="./asset/img/slide_kankoku3.jpg" alt="リコリチョン"></li>
+                        </ul>
+                    </div>
+
+                    <!-- リコ　レーティング -->
+                    <div class="ratings-container">
+                        <div class="ratings-labels">
+                            <div class="rating-label">美味しさ</div>
+                            <div class="rating-label">安さ</div>
+                            <div class="rating-label">安全性</div>
+                        </div>
+                        <div class="ratings">
+                            <div class="rating star-rating">
+                                <div class="stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                </div>
+                                <div class="rating-value">4.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">3.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">2.5</div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!-- 店説明 -->
+                    <div class="riko_descri">
+                        <div class="riko_descri_container">
+                            <div class="riko_descri_left">
+                                <h1 class="riko_descri_h1">旨みが凄い</h1>
+                                <p class="riko_descri_p">しかし,Rico's Lechonは違う。<br>日本でも店を作ってほしいほど</p>
+                            </div>
+                            <div class="riko_descri_right">
+                                <img class="riko_descri_img" src="/asset/img/kankoku_menu.jpg" alt="リコメニュー">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- リコ　地図 -->
+                    <div class="riko_map">
+                        <h1>Barangay Seoul Express</h1>
+                        <!-- 地図を表示するためのdiv要素 -->
+                        <div id="map"></div>
+                    </div>
+                </div>
+                
+
+
+
+
+<!-- ジョリビー編 -->
+                <div class="riko">
+
+                    <div class="title_riko">
+                        <h1 class="title_riko_h1">Rico's Lechon</h1>
+                    </div>
+
+                    <div class="riko_photo">
+                        <ul class="slider">
+                            <li><img src="./asset/img/rico-buta.jpg" alt="リコ豚" ></li> 
+                            <li><img src="./asset/img/ricos slices lechon.jpg" alt="リコスライス"></li>
+                            <li><img src="./asset/img/ricos-lechon-062518.jpg" alt="リコリチョン"></li>
+                        </ul>
+                    </div>
+
+                    <!-- リコ　レーティング -->
+                    <div class="ratings-container">
+                        <div class="ratings-labels">
+                            <div class="rating-label">美味しさ</div>
+                            <div class="rating-label">安さ</div>
+                            <div class="rating-label">安全性</div>
+                        </div>
+                        <div class="ratings">
+                            <div class="rating star-rating">
+                                <div class="stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                </div>
+                                <div class="rating-value">4.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">3.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">2.5</div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!-- 店説明 -->
+                    <div class="riko_descri">
+                        <div class="riko_descri_container">
+                            <div class="riko_descri_left">
+                                <h1 class="riko_descri_h1">旨みが凄い</h1>
+                                <p class="riko_descri_p">しかし,Rico's Lechonは違う。<br>日本でも店を作ってほしいほど</p>
+                            </div>
+                            <div class="riko_descri_right">
+                                <img class="riko_descri_img" src="/asset/img/rico-cebu-newmenu2.jpg" alt="リコメニュー">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- リコ　地図 -->
+                    <div class="riko_map">
+                        <h1>Rico's Lechon - AyalaMalls Central Bloc</h1>
+                        <!-- 地図を表示するためのdiv要素 -->
+                        <div id="map"></div>
+                    </div>
+                </div>
+             
+                
+
+
+
+
+<!-- ナイトマーケット編 -->
+                <div class="riko">
+
+                    <div class="title_riko">
+                        <h1 class="title_riko_h1">Rico's Lechon</h1>
+                    </div>
+
+                    <div class="riko_photo">
+                        <ul class="slider">
+                            <li><img src="./asset/img/rico-buta.jpg" alt="リコ豚" ></li> 
+                            <li><img src="./asset/img/ricos slices lechon.jpg" alt="リコスライス"></li>
+                            <li><img src="./asset/img/ricos-lechon-062518.jpg" alt="リコリチョン"></li>
+                        </ul>
+                    </div>
+
+                    <!-- リコ　レーティング -->
+                    <div class="ratings-container">
+                        <div class="ratings-labels">
+                            <div class="rating-label">美味しさ</div>
+                            <div class="rating-label">安さ</div>
+                            <div class="rating-label">安全性</div>
+                        </div>
+                        <div class="ratings">
+                            <div class="rating star-rating">
+                                <div class="stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                </div>
+                                <div class="rating-value">4.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">3.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">2.5</div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!-- 店説明 -->
+                    <div class="riko_descri">
+                        <div class="riko_descri_container">
+                            <div class="riko_descri_left">
+                                <h1 class="riko_descri_h1">旨みが凄い</h1>
+                                <p class="riko_descri_p">しかし,Rico's Lechonは違う。<br>日本でも店を作ってほしいほど</p>
+                            </div>
+                            <div class="riko_descri_right">
+                                <img class="riko_descri_img" src="/asset/img/rico-cebu-newmenu2.jpg" alt="リコメニュー">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- リコ　地図 -->
+                    <div class="riko_map">
+                        <h1>Rico's Lechon - AyalaMalls Central Bloc</h1>
+                        <!-- 地図を表示するためのdiv要素 -->
+                        <div id="map"></div>
+                    </div>
+                </div>
+                
+                <div class="riko">
+
+                    <div class="title_riko">
+                        <h1 class="title_riko_h1">Rico's Lechon</h1>
+                    </div>
+
+                    <div class="riko_photo">
+                        <ul class="slider">
+                            <li><img src="./asset/img/rico-buta.jpg" alt="リコ豚" ></li> 
+                            <li><img src="./asset/img/ricos slices lechon.jpg" alt="リコスライス"></li>
+                            <li><img src="./asset/img/ricos-lechon-062518.jpg" alt="リコリチョン"></li>
+                        </ul>
+                    </div>
+
+                    <!-- リコ　レーティング -->
+                    <div class="ratings-container">
+                        <div class="ratings-labels">
+                            <div class="rating-label">美味しさ</div>
+                            <div class="rating-label">安さ</div>
+                            <div class="rating-label">安全性</div>
+                        </div>
+                        <div class="ratings">
+                            <div class="rating star-rating">
+                                <div class="stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                </div>
+                                <div class="rating-value">4.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">3.5</div>
+                            </div>
+                            <div class="rating">
+                                <div class="stars star-rating">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                                </div>
+                                <div class="rating-value">2.5</div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!-- 店説明 -->
+                    <div class="riko_descri">
+                        <div class="riko_descri_container">
+                            <div class="riko_descri_left">
+                                <h1 class="riko_descri_h1">旨みが凄い</h1>
+                                <p class="riko_descri_p">しかし,Rico's Lechonは違う。<br>日本でも店を作ってほしいほど</p>
+                            </div>
+                            <div class="riko_descri_right">
+                                <img class="riko_descri_img" src="/asset/img/rico-cebu-newmenu2.jpg" alt="リコメニュー">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- リコ　地図 -->
+                    <div class="riko_map">
+                        <h1>Rico's Lechon - AyalaMalls Central Bloc</h1>
+                        <!-- 地図を表示するためのdiv要素 -->
+                        <div id="map"></div>
+                    </div>
+                </div>
+                
+
+
+                <div class="ramen">
+                    <div class="ramen_photo"></div>
+                    <div class="ramen_rate"></div>
+                    <div class="ramen_descri"></div>
+                    <div class="ramen_map"></div>
+                </div>
+                <div class="kankoku">
+                    <div class="kankoku_photo"></div>
+                    <div class="kankoku_rate"></div>
+                    <div class="kankoku_descri"></div>
+                    <div class="kankoku_map"></div>
+                </div>
+                <div class="joli">
+                    <div class="joli_photo"></div>
+                    <div class="joli_rate"></div>
+                    <div class="joli_descri"></div>
+                    <div class="joli_map"></div>
+                </div>
+                <div class="night">
+                    <div class="night_photo"></div>
+                    <div class="night_rate"></div>
+                    <div class="night_descri"></div>
+                    <div class="night_map"></div>
                 </div>
 
-
-                <div class="riko_rate"></div>
-                <div class="riko_descri"></div>
-                <div class="riko_map"></div>
             </div>
-            <div class="ramen">
-                <div class="ramen_photo"></div>
-                <div class="ramen_rate"></div>
-                <div class="ramen_descri"></div>
-                <div class="ramen_map"></div>
-            </div>
-            <div class="kankoku">
-                <div class="kankoku_photo"></div>
-                <div class="kankoku_rate"></div>
-                <div class="kankoku_descri"></div>
-                <div class="kankoku_map"></div>
-            </div>
-            <div class="joli">
-                <div class="joli_photo"></div>
-                <div class="joli_rate"></div>
-                <div class="joli_descri"></div>
-                <div class="joli_map"></div>
-            </div>
-            <div class="night">
-                <div class="night_photo"></div>
-                <div class="night_rate"></div>
-                <div class="night_descri"></div>
-                <div class="night_map"></div>
-            </div>
-
-        </div>
-    </main>
-
+        </main>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8hwew-wztOwikeAox0zbKxPt4mDCwCy8&callback=initMap"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8hwew-wztOwikeAox0zbKxPt4mDCwCy8&callback=initMap" async defer></script>
+
+
     <script src="./asset/JS/menu.js"></script>
 </body>
 </html>

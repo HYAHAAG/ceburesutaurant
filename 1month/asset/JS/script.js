@@ -1,3 +1,25 @@
+// 最初のアニメーション
+// ページの読み込みが完了したら実行される関数
+window.onload = function() {
+	// 1秒後にメッセージを非表示にしてコンテンツを表示する
+	setTimeout(function() {
+		document.querySelector('.before_top_h1  ').style.display = 'none';
+		document.querySelector('#bofore_top_content').style.display = 'block';
+		// document.querySelector('.before_top').style.backgroundColor = "";
+	}, 5000);
+
+}
+// // 5秒後に背景色を消す
+// setTimeout(function() {
+// 	document.querySelector('.before_top').style.backgroundColor = "";
+// }, 5000);
+
+
+
+
+
+
+// ヘッダー
 const fixedElm = document.getElementById('header');
 let scrollPoint = 0; // 現在のスクロール位置をセットする変数
 let lastPoint = 0; // 1つ前のスクロール位置をセットする変数
@@ -54,3 +76,12 @@ function delayScrollAnime() {
 $(window).on('load', function(){
     delayScrollAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+// 画面サイズに合わせてコンテナの高さを調整する
+// const container = document.querySelector('.container');
+// container.style.height = window.innerHeight + 'px';
+
+// // 画面サイズが変更された時に高さを再調整する
+// window.addEventListener('resize', () => {
+// container.style.height = window.innerHeight + 'px';
+// });

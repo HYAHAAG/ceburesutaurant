@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="/asset/css/toiawase.css">
+    </head>
+    <body>
+        <header id="header" >
+            <div class="site_name">
+                <h1>Ryosuke Site</h1>
+            </div>
+            <div class="header_list" >
+                <ul class="header_list_ul">
+                    <li class="header_list_list"><a href="/index.html">Top</a></li>
+                    <li class="header_list_list"><a href="/memu.html">お店一覧</a></li>
+                    <li class="header_list_list"><a href="/selfintro.html">筆者情報</a></li>
+                    <li class="header_list_list"><a href="/toiawase.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+            
+
+        </header>
+    <!-- <h1>お問い合わせフォーム</h1> -->
+    <form method="post" action="send.php">
+        <label>お名前:</label>
+        <input type="text" name="name" required>
+        <br>
+        <label>メールアドレス:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label>お問い合わせ内容:</label>
+        <textarea name="message" rows="5" required></textarea>
+        <br>
+        <input type="submit" value="送信">
+    </form>
+    </body>
+</html>
