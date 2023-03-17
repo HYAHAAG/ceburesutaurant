@@ -17,9 +17,11 @@ body {
 /* main {
 	max-width: 800
 } */ 
-a{
+.a_self{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    text-align: center;
+    
 }
 
 /* ヘッダー関係 */

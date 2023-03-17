@@ -379,7 +379,7 @@ header{
 }
 
 /* 地図について */
-#map {
+#map,.kankoku_map ,.ramen_map ,.jolli_map,.night_map {
     height: 400px;
     width: 100%;
 }

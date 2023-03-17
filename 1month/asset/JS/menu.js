@@ -73,5 +73,24 @@ function initMap() {
 }
 
 
+// APIの作成
+function initMap() {
+    // 地図を表示する場所の緯度・経度を設定
+    const center = { lat: 10.3172168, lng: 123.9057731 };
+    // 地図を表示する要素を取得
+    const mapElement = document.getElementById("map");
+    // 地図を生成
+    const map = new google.maps.Map(mapElement, {
+        center: center,
+      zoom: 16, // 地図のズームレベルを設定
+    });
+    // マーカーを追加
+    new google.maps.Marker({
+        position: center,
+        map: map,
+        title: "Rico's Lechon - AyalaMalls Central Bloc",
+    });
+}
+
 
 

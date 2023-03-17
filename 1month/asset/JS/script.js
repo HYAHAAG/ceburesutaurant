@@ -77,6 +77,18 @@ $(window).on('load', function(){
     delayScrollAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
+
+
+// マンゴーと甚兵衛
+// Wait 8 seconds before starting the animation
+setTimeout(function() {
+	var mango = document.getElementById("mango");
+	var whale = document.getElementById("whale");
+	mango.style.display = "block";
+	whale.style.display = "block";
+}, 10000);
+  
+
 // 画面サイズに合わせてコンテナの高さを調整する
 // const container = document.querySelector('.container');
 // container.style.height = window.innerHeight + 'px';
